@@ -1,9 +1,22 @@
 .section1 {
-  background-color: blue;
+  background-color: #053c5e;
   width: 100vw;
-  height: 100dvh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
+  flex-direction: column;
+}
+.profileImage {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.faIcon {
+  font-size: 8vw;
+  padding: 2vw;
+}
+.header1 {
+  font-family: "Roboto";
 }

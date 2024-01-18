@@ -12,9 +12,8 @@
 
 .navbar {
   color: white;
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 2vh;
   display: flex;
   justify-content: space-between;
   align-items: center;

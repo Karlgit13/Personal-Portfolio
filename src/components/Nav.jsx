@@ -3,16 +3,15 @@ import "../style/nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
+  faDiscord,
   faGithub,
   faLinkedin,
-  faMedium,
-  faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto: hello@example.com",
+    url: "mailto: karl.vareskog@gmail.com",
   },
   {
     icon: faGithub,
@@ -23,12 +22,8 @@ const socials = [
     url: "https://www.linkedin.com",
   },
   {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
+    icon: faDiscord,
+    url: "discord.com",
   },
 ];
 
