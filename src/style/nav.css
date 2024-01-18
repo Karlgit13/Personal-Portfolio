@@ -1,0 +1,30 @@
+.header-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(0);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  background-color: #18181b;
+}
+
+.navbar {
+  color: white;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-socials {
+  color: white;
+  display: flex;
+  gap: 8px;
+}
+.right-links {
+  display: flex;
+  gap: 8px;
+}
