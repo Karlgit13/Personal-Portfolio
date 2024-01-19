@@ -16,12 +16,12 @@ const socials = [
   },
   {
     icon: faGithub,
-    url: "https://www.github.com",
+    url: "https://github.com/Karlgit13",
     className: "github",
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.com/in/karl-vareskog-ab6a432a7/",
     className: "linkedIn",
   },
   {
@@ -72,24 +72,11 @@ const Nav = () => {
       <div className="navbar">
         <nav>
           <div className="navbar-socials">
-            {socials.map(
-              (
-                { icon, url, className } // Observera att className är tillagd här
-              ) => (
-                <a
-                  key={url}
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={icon}
-                    size="2x"
-                    className={className} // Använder nu korrekt extraherad className
-                  />
-                </a>
-              )
-            )}
+            {socials.map(({ icon, url, className }) => (
+              <a key={url} href={url} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={icon} size="2x" className={className} />
+              </a>
+            ))}
           </div>
         </nav>
         <nav>

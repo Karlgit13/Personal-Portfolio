@@ -3,20 +3,19 @@
   width: 100vw;
   max-width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .certsContainer {
-  top: 0;
-  display: flex;
-  justify-content: center;
-  max-width: 100vw;
+  margin-top: 1vh;
+  display: inline-flex;
   flex-wrap: wrap;
-  padding: 4vw;
-  margin: 2vw;
-  gap: 2vw;
+  width: 90vw;
+  padding: 2vw;
+  justify-content: center;
+  gap: 1vw;
   border: 1px solid #edefee;
   border-radius: 8px;
   background: linear-gradient(45deg, lightblue, lightyellow, lightblue);
@@ -25,6 +24,6 @@
   width: 20vw;
   height: auto;
 }
-.certsText {
-  flex: auto;
+.infoDiv {
+  text-align: center;
 }
