@@ -18,6 +18,10 @@
   font-size: 8vw;
   padding: 2vw;
 }
+.faIcon:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
 .header1 {
   font-family: "MarkaziText";
   font-weight: 600;
@@ -35,4 +39,24 @@
   text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
   margin-top: -2vh;
   padding: 8px;
+}
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
 }
