@@ -32,11 +32,7 @@ const certificates = [
     image: require("../assets/Programming_With_Javascript_Meta_page-0001.jpg"),
     alt: "ProgrammingWithJavascript",
   },
-  {
-    id: 7,
-    image: require("../assets/Python_Mimo_page-0001.jpg"),
-    alt: "Python",
-  },
+
   {
     id: 8,
     image: require("../assets/React_Basics_Meta_page-0001.jpg"),
@@ -52,15 +48,18 @@ const certificates = [
 const Section3 = () => {
   return (
     <div id="section3" className="section3">
-      <div className="certs-container">
+      <div className="certsContainer">
         {certificates.map((certificate) => (
           <img
             key={certificate.id}
-            className="certImage"
+            className="certsImage"
             src={certificate.image}
             alt={certificate.alt}
           />
         ))}
+      </div>
+      <div className="infoDiv">
+        <h1></h1>
       </div>
     </div>
   );

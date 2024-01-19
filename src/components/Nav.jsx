@@ -106,7 +106,7 @@ const Nav = () => {
               href="#section3"
               onClick={handleClick("section3")}
             >
-              Kontaka mig
+              Om mig
             </a>
           </div>
         </nav>
