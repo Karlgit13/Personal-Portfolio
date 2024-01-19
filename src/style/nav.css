@@ -11,7 +11,7 @@
 }
 
 .navbar {
-  color: white;
+  color: #edefee;
   margin: 0 auto;
   padding: 2vh;
   display: flex;
@@ -19,11 +19,30 @@
   align-items: center;
 }
 .navbar-socials {
-  color: white;
   display: flex;
-  gap: 8px;
+  gap: 2vw;
 }
 .right-links {
   display: flex;
-  gap: 8px;
+  gap: 2vw;
+}
+
+.envelope {
+  color: #d44638;
+}
+.github {
+  color: #edefee;
+}
+.linkedIn {
+  color: #0a66c2;
+}
+.discord {
+  color: #5865f2;
+}
+
+.link1,
+.link2 {
+  color: #edefee;
+  text-decoration: none;
+  list-style-type: none;
 }

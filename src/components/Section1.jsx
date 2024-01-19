@@ -15,7 +15,10 @@ const Section1 = () => {
     <div id="section1" className="section1">
       <img className="profileImage" src={ProfileImage} alt="Profile" />
       <h1 className="header1">Karl Vareskog</h1>
-      <h2 className="header2">Webbutvecklare</h2>
+      <h4 className="header2">
+        Webbutvecklare, <br />
+        med kunskaper inom HTML, CSS, Javascript, React, Git osv.
+      </h4>
       <p>
         <FontAwesomeIcon
           className="faIcon"

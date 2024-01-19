@@ -12,18 +12,22 @@ const socials = [
   {
     icon: faEnvelope,
     url: "mailto: karl.vareskog@gmail.com",
+    className: "envelope",
   },
   {
     icon: faGithub,
     url: "https://www.github.com",
+    className: "github",
   },
   {
     icon: faLinkedin,
     url: "https://www.linkedin.com",
+    className: "linkedIn",
   },
   {
     icon: faDiscord,
     url: "discord.com",
+    className: "discord",
   },
 ];
 
@@ -68,24 +72,40 @@ const Nav = () => {
       <div className="navbar">
         <nav>
           <div className="navbar-socials">
-            {socials.map(({ icon, url }) => (
-              <a key={url} href={url} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={icon}
-                  size="2x"
-                  color="white"
+            {socials.map(
+              (
+                { icon, url, className } // Observera att className är tillagd här
+              ) => (
+                <a
                   key={url}
-                />
-              </a>
-            ))}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={icon}
+                    size="2x"
+                    className={className} // Använder nu korrekt extraherad className
+                  />
+                </a>
+              )
+            )}
           </div>
         </nav>
         <nav>
           <div className="right-links">
-            <a href="#section2" onClick={handleClick("section2")}>
+            <a
+              className="link1"
+              href="#section2"
+              onClick={handleClick("section2")}
+            >
               Projects
             </a>
-            <a href="#section3" onClick={handleClick("section3")}>
+            <a
+              className="link2"
+              href="#section3"
+              onClick={handleClick("section3")}
+            >
               Contact Me
             </a>
           </div>
