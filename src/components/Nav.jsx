@@ -8,6 +8,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
+
 const socials = [
   {
     icon: faEnvelope,

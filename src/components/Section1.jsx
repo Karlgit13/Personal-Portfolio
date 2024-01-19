@@ -21,15 +21,15 @@ const Section1 = () => {
     });
 
     // Startar animationen när komponenten monteras
-    const arrow = document.querySelector(".scroll-down-arrow");
-    arrow.style.animation = "bounce 2s infinite";
+    const arrow1 = document.querySelector(".section1-arrow1");
+    arrow1.style.animation = "bounce 2s infinite";
 
     // Skapar en timer som stoppar animationen efter 5 sekunder
     const timer = setTimeout(() => {
-      if (arrow) {
-        arrow.style.animation = "none"; // Stoppar animationen
+      if (arrow1) {
+        arrow1.style.animation = "none"; // Stoppar animationen
       }
-    }, 5000);
+    }, 7000);
 
     // Rensar timern när komponenten avmonteras
     return () => clearTimeout(timer);
@@ -56,7 +56,7 @@ const Section1 = () => {
         Webbutvecklare, <br />
         med kunskaper inom <br /> HTML, CSS, Javascript, React, Git osv.
       </h4>
-      <p>
+      <p className="paragraph">
         <FontAwesomeIcon
           data-aos="fade-right"
           className="faIcon"
@@ -92,7 +92,7 @@ const Section1 = () => {
       </p>
       <FontAwesomeIcon
         icon={faChevronDown}
-        className="scroll-down-arrow"
+        className="scroll-down-arrow1 section1-arrow1"
         onClick={() => handleClick("section2")}
       />
     </div>
