@@ -8,7 +8,6 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-
 const socials = [
   {
     icon: faEnvelope,
@@ -100,14 +99,14 @@ const Nav = () => {
               href="#section2"
               onClick={handleClick("section2")}
             >
-              Projects
+              Mina Projekt
             </a>
             <a
               className="link2"
               href="#section3"
               onClick={handleClick("section3")}
             >
-              Contact Me
+              Kontaka mig
             </a>
           </div>
         </nav>

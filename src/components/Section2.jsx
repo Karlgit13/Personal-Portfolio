@@ -39,7 +39,7 @@ const Section2 = () => {
           }}
         >
           <Typography level="h2" fontSize="lg" textColor="#000">
-            Role Playing Game
+            Little Lemon Restaurant
           </Typography>
           <CardCover
             sx={{
