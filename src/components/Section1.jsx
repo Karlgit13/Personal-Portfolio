@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
+
 const Section1 = () => {
   useEffect(() => {
     Aos.init({
