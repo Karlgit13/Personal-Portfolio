@@ -5,6 +5,7 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import ListSubheader from "@mui/material/ListSubheader";
 import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
+import "../style/section3.css";
 
 const handleIconClick = (url) => {
   if (url) {
@@ -16,9 +17,11 @@ const handleIconClick = (url) => {
 
 export default function TitlebarImageList() {
   return (
-    <ImageList sx={{ width: 500, height: 450 }}>
+    <ImageList className="imageList" sx={{ height: 430 }}>
       <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div">Mina Certifikat - Klicka på (i) för verifiering.</ListSubheader>
+        <ListSubheader component="div">
+          Mina Certifikat - Klicka på (i) för verifiering.
+        </ListSubheader>
       </ImageListItem>
       {MinaCerts.map((item) => (
         <ImageListItem key={item.img}>
