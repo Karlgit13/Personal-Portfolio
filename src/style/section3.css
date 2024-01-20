@@ -8,19 +8,3 @@
   flex-direction: column;
   align-items: center;
 }
-.certsContainer {
-  margin-top: 1vh;
-  display: inline-flex;
-  flex-wrap: wrap;
-  width: 90vw;
-  padding: 2vw;
-  justify-content: center;
-  gap: 1vw;
-  border: 1px solid #edefee;
-  border-radius: 8px;
-  background: linear-gradient(45deg, lightblue, lightyellow, lightblue);
-}
-.certsImage {
-  width: 20vw;
-  height: auto;
-}
