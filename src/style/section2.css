@@ -1,4 +1,5 @@
 .section2 {
+  position: relative;
   background-color: #254441;
   width: 100vw;
   max-width: 100vw;
@@ -7,4 +8,17 @@
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
+}
+.section2-heading {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #edefee;
+}
+
+@media (max-width: 992px) {
+  .section2 {
+    flex-direction: column;
+  }
 }

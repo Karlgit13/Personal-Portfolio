@@ -19,7 +19,7 @@ export default function TitlebarImageList() {
   return (
     <ImageList className="imageList" sx={{ height: 430 }}>
       <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div">
+        <ListSubheader className="listSubHeader" component="div">
           Mina Certifikat - Klicka på (i) för verifiering.
         </ListSubheader>
       </ImageListItem>
