@@ -17,8 +17,8 @@ const handleIconClick = (url) => {
 
 export default function TitlebarImageList() {
   return (
-    <ImageList className="imageList" sx={{ height: 430 }}>
-      <ImageListItem key="Subheader" cols={2}>
+    <ImageList className="imageList" sx={{ height: 350 }}>
+      <ImageListItem key="Subheader" cols={2} rows={2}>
         <ListSubheader className="listSubHeader" component="div">
           Mina Certifikat - Klicka på (i) för verifiering.
         </ListSubheader>

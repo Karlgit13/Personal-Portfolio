@@ -12,7 +12,7 @@
 
 .certsContainer {
   position: absolute;
-  bottom: 5%;
+  top: 5%;
 }
 
 @media (max-width: 992px) {
@@ -22,6 +22,7 @@
 }
 @media (min-width: 992px) {
   .imageList {
-    width: 65vw;
+    width: 50vw;
+    overflow-y: auto;
   }
 }
