@@ -5,6 +5,7 @@ import CardCover from "@mui/joy/CardCover";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
 import "../style/section2.css";
+import LittleLemon from "../assets/LittleLemon.png";
 
 const Section2 = () => {
   return (
@@ -37,31 +38,16 @@ const Section2 = () => {
         <Card
           variant="outlined"
           sx={{
-            minHeight: "280px",
+            maxHeight: "200px",
+            minHeight: "130px",
             width: 320,
             backgroundColor: "#fff",
             borderColor: "#000",
           }}
         >
-          <Typography level="h2" fontSize="lg" textColor="#000">
-            Little Lemon Restaurant
-          </Typography>
-          <CardCover
-            sx={{
-              background:
-                "linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)",
-              border: "1px solid",
-              borderColor: "#777",
-            }}
-          >
-            <Typography level="h2" fontSize="lg" textColor="#fff">
-              Card Cover
-            </Typography>
-          </CardCover>
+          <CardCover></CardCover>
           <CardContent>
-            <Typography level="h2" fontSize="lg" textColor="#fff" m={2}>
-              Card Content
-            </Typography>
+            <img className="projekt-image" src={LittleLemon} alt="" />
           </CardContent>
         </Card>
       </Box>
@@ -89,7 +75,7 @@ const Section2 = () => {
         <Card
           variant="outlined"
           sx={{
-            minHeight: "280px",
+            minHeight: "100px",
             width: 320,
             backgroundColor: "#fff",
             borderColor: "#000",

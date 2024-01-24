@@ -17,6 +17,10 @@
   color: #edefee;
 }
 
+.projekt-image {
+  max-height: 200px;
+}
+
 @media (max-width: 992px) {
   .section2 {
     flex-direction: column;
