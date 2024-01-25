@@ -2,7 +2,7 @@
   position: relative;
   background-color: #254441;
   width: 100vw;
-  max-width: 100vw;
+
   height: 100vh;
   display: flex;
   align-items: center;
@@ -20,20 +20,33 @@
 }
 
 .projekt-div {
+  text-align: center;
+}
+.slick-slide {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: auto;
+}
+
+.slick-slide .projekt-div {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.Karusell {
+  width: 80vw;
+  max-width: 450px;
+  margin: auto;
+}
+
+.slick-dots {
+  text-align: center;
 }
 
 .projekt-bild {
-  width: 200px;
-  height: 200px;
-  border-radius: 8px;
-}
-.projekt-bild:hover {
-  transition: transform 0.5s;
-  transform: scale(105%);
+  max-width: 100%;
+  height: auto;
 }
 
 .projekt-titel {
@@ -44,6 +57,10 @@
   margin-bottom: 5px;
   text-align: center;
   font-weight: 500;
+}
+
+.projekt-knapp {
+  padding: 6px;
 }
 
 @media (max-width: 992px) {
