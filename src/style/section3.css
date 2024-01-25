@@ -9,3 +9,12 @@
   flex-direction: column;
   align-items: center;
 }
+.section3-heading {
+  font-family: "MarkaziText";
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #edefee;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
+}

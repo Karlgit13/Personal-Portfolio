@@ -20,18 +20,15 @@ const Section1 = () => {
       easing: "ease-out-cubic",
     });
 
-    // Startar animationen när komponenten monteras
     const arrow1 = document.querySelector(".section1-arrow1");
     arrow1.style.animation = "bounce 2s infinite";
 
-    // Skapar en timer som stoppar animationen efter 5 sekunder
     const timer = setTimeout(() => {
       if (arrow1) {
-        arrow1.style.animation = "none"; // Stoppar animationen
+        arrow1.style.animation = "none";
       }
     }, 7000);
 
-    // Rensar timern när komponenten avmonteras
     return () => clearTimeout(timer);
   }, []);
 
