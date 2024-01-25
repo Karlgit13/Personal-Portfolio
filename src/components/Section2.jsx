@@ -25,13 +25,13 @@ const Section2 = ({ ProjektLista }) => {
         <h1 className="section2-heading">Mina Projekt</h1>
       </div>
       <Slider {...settings}>
-        {ProjektLista.map(({ titel, img, url }) => (
+        {ProjektLista.map(({ titel, img, url, beskrivning, buttonText }) => (
           <div key={titel} className="projekt-div">
             <h2 className="projekt-titel">{titel}</h2>
             <img className="projekt-bild" src={img} alt={titel} />
-            <p className="projekt-paragraph">Beskrivning av projektet</p>
+            <p className="projekt-paragraph">{beskrivning}</p>
             <button className="projekt-knapp" onClick={() => handleClick(url)}>
-              LiveDemo
+              {buttonText}
             </button>
           </div>
         ))}

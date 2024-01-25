@@ -9,11 +9,15 @@ const ProjektLista = [
     titel: "Little Lemon Restaurant",
     img: require("./assets/LittleLemon.png"),
     url: "https://karlgit13.github.io/React-Little-Lemon-Restaurant/",
+    buttonText: "LIVE DEMO =>",
+    beskrivning: "",
   },
   {
     titel: "Role Playing Game",
     img: require("./assets/RPG.png"),
     url: "https://github.com/Karlgit13/Role-Playing-Game",
+    buttonText: "Github => Repository",
+    beskrivning: "",
   },
 ];
 

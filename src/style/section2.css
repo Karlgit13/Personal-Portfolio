@@ -2,7 +2,6 @@
   position: relative;
   background-color: #254441;
   width: 100vw;
-
   height: 100vh;
   display: flex;
   align-items: center;
@@ -38,6 +37,7 @@
   width: 80vw;
   max-width: 450px;
   margin: auto;
+  border-radius: 16px;
 }
 
 .slick-dots {
@@ -59,8 +59,29 @@
   font-weight: 500;
 }
 
+.projekt-paragraph {
+  color: #edefee;
+  font-family: "Karla";
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .projekt-knapp {
   padding: 6px;
+  font-family: "Karla";
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 1px solid #edefee;
+  cursor: pointer;
+}
+
+.projekt-knapp:hover {
+  transform: scale(110%);
+  transition: transform 0.2s ease-in-out;
 }
 
 @media (max-width: 992px) {
