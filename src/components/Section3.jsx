@@ -1,5 +1,6 @@
 import "../style/section3.css";
 import React from "react";
+// import Cert from "../assets/Meta-Front-End-Developer_page-0001.jpg";
 
 const Section3 = () => {
   return (

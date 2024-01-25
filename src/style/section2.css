@@ -63,10 +63,12 @@
   color: #edefee;
   font-family: "Karla";
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 .projekt-knapp {
