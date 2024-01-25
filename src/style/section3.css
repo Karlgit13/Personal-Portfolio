@@ -9,20 +9,3 @@
   flex-direction: column;
   align-items: center;
 }
-
-/* .certsContainer {
-  position: absolute;
-  top: 5%;
-}
-
-@media (max-width: 992px) {
-  .imageList {
-    width: 90vw;
-  }
-}
-@media (min-width: 992px) {
-  .imageList {
-    width: 50vw;
-    overflow-y: auto;
-  }
-} */
