@@ -10,14 +10,15 @@ const ProjektLista = [
     img: require("./assets/LittleLemon.png"),
     url: "https://karlgit13.github.io/React-Little-Lemon-Restaurant/",
     buttonText: "LIVE DEMO =>",
-    beskrivning: "",
+    beskrivning:
+      "Det här är mitt första projekt i React.js, som jag utvecklade under tiden jag genomgick ett online-kurspaket i Front-end-utveckling. Det har varit en enormt givande erfarenhet som inte bara utvecklat mina tekniska färdigheter, utan också gett mig insikter i responsiv design för både desktop och mobila enheter.",
   },
   {
     titel: "Role Playing Game",
     img: require("./assets/RPG.png"),
     url: "https://github.com/Karlgit13/Role-Playing-Game",
     buttonText: "Github => Repository",
-    beskrivning: "",
+    beskrivning: "Alldeles för enkelt projekt.",
   },
 ];
 
