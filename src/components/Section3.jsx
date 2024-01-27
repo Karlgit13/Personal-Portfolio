@@ -1,5 +1,6 @@
 import "../style/section3.css";
-import Cert from "../assets/Meta-Front-End-Developer_page-0001.jpg";
+import FrontEndCert from "../assets/FrontEndCert.jpg";
+import FrontEndBadge from "../assets/FrontEndBadge.png";
 import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -11,8 +12,9 @@ const Section3 = () => {
   return (
     <div id="section3" className="section3">
       <h1 className="section3-heading">Om mig</h1>
+      
       <div>
-        <Accordion className="accordion" defaultExpanded>
+        <Accordion className="accordion">
           <AccordionSummary
             className="accordion"
             expandIcon={<ExpandMoreIcon />}
@@ -111,6 +113,10 @@ const Section3 = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
+      </div>
+      <div className="cert-container">
+        <img className="cert" src={FrontEndCert} alt="cert" />
+        <img className="badge" src={FrontEndBadge} alt="badge" />
       </div>
     </div>
   );

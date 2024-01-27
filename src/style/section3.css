@@ -4,6 +4,7 @@
   width: 100vw;
   max-width: 100vw;
   height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
@@ -29,7 +30,8 @@
   justify-content: center;
   text-align: center;
   padding: 8px;
-  color: red;
+  color: #000;
+  font-weight: 800;
 }
 
 .accordion .MuiAccordionSummary-root .MuiTypography-root {
@@ -45,6 +47,17 @@ p.MuiTypography-root {
   font-family: "Karla";
   font-weight: 400;
   font-size: 14px;
-  color: red;
+  color: #000;
   text-align: center;
+}
+
+.cert-container {
+  display: inline-flex;
+  gap: 7vw;
+}
+.cert, .badge {
+  width: 50vw;
+  max-width: 400px;
+  height: auto;
+  padding: 24px;
 }
