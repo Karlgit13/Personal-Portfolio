@@ -1,6 +1,6 @@
 .section3 {
   position: relative;
-  background-color: #64403e;
+  background-color: #51513d;
   width: 100vw;
   max-width: 100vw;
   height: 100vh;
@@ -17,4 +17,34 @@
   transform: translate(-50%, -50%);
   color: #edefee;
   text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+.accordion .MuiAccordionSummary-root,
+.MuiAccordionDetails-root {
+  background: #edefee;
+}
+
+/* TITEL TEXT*/
+.accordion .MuiAccordionSummary-root {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  color: red;
+}
+
+.accordion .MuiAccordionSummary-root .MuiTypography-root {
+  flex-grow: 1;
+}
+
+.accordion:first-of-type {
+  margin-top: 12vh;
+}
+
+/* P TEXT*/
+p.MuiTypography-root {
+  font-family: "Karla";
+  font-weight: 400;
+  font-size: 14px;
+  color: red;
+  text-align: center;
 }
