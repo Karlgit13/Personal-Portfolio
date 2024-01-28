@@ -54,8 +54,11 @@
   font-weight: 800;
 }
 
-.accordion .MuiAccordionSummary-root .MuiTypography-root {
+.accordion .MuiAccordionSummary-root .MuiTypography-root,
+.MuiPaper-root {
   flex-grow: 1;
+  margin-left: 4% !important;
+  margin-right: 4% !important;
 }
 
 .accordion:first-of-type {
@@ -70,6 +73,13 @@ p.MuiTypography-root {
   color: #000;
   text-align: center;
   max-width: 1000px;
+}
+.accordion {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+@media (max-width: 992px) {
 }
 
 .cert-container {
