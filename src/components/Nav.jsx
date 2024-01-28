@@ -26,7 +26,7 @@ const socials = [
   },
   {
     icon: faDiscord,
-    url: "discord.com",
+    url: "https://discordapp.com/users/1181218436446179338",
     className: "discord",
   },
 ];
