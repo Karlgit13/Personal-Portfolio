@@ -43,7 +43,11 @@ const Nav = ({ isSection1 }) => {
         return;
       }
 
-      if (isSection1 || prevScrollPos.current > currentScrollPos) {
+      if (
+        currentScrollPos === 0 ||
+        isSection1 ||
+        prevScrollPos.current > currentScrollPos
+      ) {
         headerElement.style.transform = "translateY(0)";
       } else {
         headerElement.style.transform = "translateY(-200px)";
