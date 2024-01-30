@@ -33,37 +33,29 @@ const socials = [
 
 const Nav = ({ isSection1 }) => {
   const headerRef = useRef(null);
+  const prevScrollPos = useRef(window.scrollY);
 
   useEffect(() => {
-    if (isSection1) {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
       const headerElement = headerRef.current;
-      if (headerElement) {
-        headerElement.style.transform = "translateY(0)";
+      if (!headerElement) {
+        return;
       }
-    } else {
-      let prevScrollPos = window.scrollY;
 
-      const handleScroll = () => {
-        const currentScrollPos = window.scrollY;
-        const headerElement = headerRef.current;
-        if (!headerElement) {
-          return;
-        }
+      if (isSection1 || prevScrollPos.current > currentScrollPos) {
+        headerElement.style.transform = "translateY(0)";
+      } else {
+        headerElement.style.transform = "translateY(-200px)";
+      }
+      prevScrollPos.current = currentScrollPos;
+    };
 
-        if (prevScrollPos > currentScrollPos) {
-          headerElement.style.transform = "translateY(0)";
-        } else {
-          headerElement.style.transform = "translateY(-200px)";
-        }
-        prevScrollPos = currentScrollPos;
-      };
+    window.addEventListener("scroll", handleScroll);
 
-      window.addEventListener("scroll", handleScroll);
-
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [isSection1]);
 
   const handleClick = (anchor) => () => {
