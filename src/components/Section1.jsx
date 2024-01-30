@@ -91,6 +91,7 @@ const Section1 = () => {
         icon={faChevronDown}
         className="scroll-down-arrow1 section1-arrow1"
         onClick={() => handleClick("section2")}
+        data-testid="scroll-down-arrow"
       />
     </div>
   );
