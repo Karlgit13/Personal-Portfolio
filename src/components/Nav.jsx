@@ -31,7 +31,7 @@ const socials = [
   },
 ];
 
-const Nav = () => {
+const Nav = ({ isSection1 }) => {
   const headerRef = useRef(null);
 
   useEffect(() => {
@@ -43,19 +43,24 @@ const Nav = () => {
       if (!headerElement) {
         return;
       }
-      if (prevScrollPos > currentScrollPos) {
-        headerElement.style.transform = "translateY(0)";
-      } else {
-        headerElement.style.transform = "translateY(-200px)";
+
+      if (!isSection1) {
+        if (prevScrollPos > currentScrollPos) {
+          headerElement.style.transform = "translateY(0)";
+        } else {
+          headerElement.style.transform = "translateY(-200px)";
+        }
       }
+
       prevScrollPos = currentScrollPos;
     };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isSection1]);
 
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
@@ -68,7 +73,10 @@ const Nav = () => {
     }
   };
   return (
-    <header className="header-navbar" ref={headerRef}>
+    <header
+      className={`header-navbar ${isSection1 ? "always-visible" : ""}`}
+      ref={headerRef}
+    >
       <div className="navbar">
         <nav>
           <div className="navbar-socials">

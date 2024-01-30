@@ -7,12 +7,24 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const mejlIkon = [
+  {
+    icon: faEnvelope,
+    url: "mailto: karl.vareskog@gmail.com",
+    className: "envelope",
+  },
+];
+
+const p = "Klicka på brevet för att mejla mig =>";
 
 const Section3 = () => {
   return (
     <div id="section3" className="section3">
       <h1 className="section3-heading">Om mig</h1>
-      
+
       <div>
         <Accordion className="accordion">
           <AccordionSummary
@@ -117,6 +129,18 @@ const Section3 = () => {
       <div className="cert-container">
         <img className="cert" src={FrontEndCert} alt="cert" />
         <img className="badge" src={FrontEndBadge} alt="badge" />
+      </div>
+      <div className="kontakta-mig">
+        <p className="brev">{p}</p>
+        {mejlIkon.map(({ url, icon, className }) => (
+          <a key={url} href={url} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon
+              icon={icon}
+              size="3x"
+              className={`${className} blue-icon`}
+            />
+          </a>
+        ))}
       </div>
     </div>
   );

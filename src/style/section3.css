@@ -83,6 +83,7 @@ p.MuiTypography-root {
 }
 
 .cert-container {
+  max-width: 1200px;
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
@@ -95,4 +96,18 @@ p.MuiTypography-root {
   padding: 6px;
   border-radius: 5%;
   margin: 5vh 0 3vh 0;
+}
+.brev {
+  color: #edefee;
+}
+.blue-icon {
+  color: rgb(135, 216, 244);
+}
+.kontakta-mig {
+  font-size: 1rem;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  display: inline-flex;
+  padding: 16px;
+  gap: 20px;
 }
