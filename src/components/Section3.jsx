@@ -127,7 +127,13 @@ const Section3 = () => {
         </Accordion>
       </div>
       <div className="cert-container">
-        <img className="cert" src={FrontEndCert} alt="cert" />
+        <a
+          href="https://coursera.org/share/8ed07deb3e7546974a4dc4e59910049e"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="cert" src={FrontEndCert} alt="cert" />
+        </a>
         <img className="badge" src={FrontEndBadge} alt="badge" />
       </div>
       <div className="kontakta-mig">
