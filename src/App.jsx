@@ -6,6 +6,14 @@ import Section3 from "./components/Section3";
 // lätt tillgänglig.
 const ProjektLista = [
   {
+    titel: "E-Handel",
+    img: require("./assets/e-handel.png"),
+    url: "https://karlgit13.github.io/E-handel/",
+    buttonText: "LIVE DEMO =>",
+    beskrivning:
+      "Mitt senaste projekt är en responsiv e-handelsplattform, skapad från grunden med Create React App (CRA). Den är designad för att ge en sömlös shoppingupplevelse på alla enheter, med enkel navigering och en intuitiv användarinterface.",
+  },
+  {
     titel: "Little Lemon Restaurant",
     img: require("./assets/LittleLemon.png"),
     url: "https://karlgit13.github.io/React-Little-Lemon-Restaurant/",
