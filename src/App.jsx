@@ -3,11 +3,10 @@ import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
 
-// lätt tillgänglig.
 const ProjektLista = [
   {
     titel: "E-Handel",
-    img: require("./assets/e-handel.png"),
+    img: require("./assets/e-handelUpdaterad.png"),
     url: "https://karlgit13.github.io/E-handel/",
     buttonText: "LIVE DEMO =>",
     beskrivning:
