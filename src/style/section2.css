@@ -25,6 +25,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
@@ -78,7 +79,7 @@
 .projekt-titel {
   color: #edefee;
   font-family: "Karla";
-  font-size: calc(14px + 0.3vw);
+  font-size: calc(14px + 0.1vw);
   text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
   margin-bottom: 5px;
   text-align: center;
@@ -94,13 +95,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 200;
-  font-size: calc(14px + 0.3vw);
+  font-size: calc(14px + 0.1vw);
 }
 
 .projekt-knapp {
   padding: 6px;
   font-family: "Karla";
-  font-size: calc(14px + 0.3vw);
+  font-size: calc(14px + 0.1vw);
   font-weight: 700;
   border-radius: 8px;
   border: 1px solid #edefee;
