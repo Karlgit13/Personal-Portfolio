@@ -33,7 +33,6 @@
 .section3-heading {
   font-family: "MarkaziText";
   position: absolute;
-  font-size: calc(1.5rem + 0.5vw);
   top: 1%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -70,7 +69,7 @@
 p.MuiTypography-root {
   font-family: "Karla";
   font-weight: 400;
-  font-size: calc(14px + 0.5vw);
+  font-size: calc(14px + 0.3vw);
   color: #000;
   text-align: center;
   max-width: 1000px;
@@ -114,7 +113,7 @@ p.MuiTypography-root {
   color: rgb(135, 216, 244);
 }
 .kontakta-mig {
-  font-size: calc(14px + 0.5vw);
+  font-size: calc(14px + 0.3vw);
   text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
   font-weight: 700;
   display: inline-flex;
