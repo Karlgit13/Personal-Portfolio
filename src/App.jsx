@@ -5,6 +5,14 @@ import Section3 from "./components/Section3";
 
 const ProjektLista = [
   {
+    titel: "Pokemon Arena",
+    img: require("./assets/poke.png"),
+    url: "https://karlgit13.github.io/pokemon/",
+    buttonText: "LIVE DEMO =>",
+    beskrivning:
+      "Det här projektet är en applikation jag utvecklade för att fördjupa mina färdigheter i att integrera och hantera data från externa API:er, specifikt genom att använda PokeAPI. Appen är ett Pokemon-arenaspel där allt från attack- och försvarsstatistik till andra grundläggande egenskaper för varje Pokemon hämtas direkt från PokeAPI.",
+  },
+  {
     titel: "E-Handel",
     img: require("./assets/e-handelUpdaterad.png"),
     url: "https://karlgit13.github.io/E-handel/",
