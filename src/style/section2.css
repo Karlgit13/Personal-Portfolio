@@ -41,6 +41,11 @@
 
 .projekt-div {
   text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-content: center; */
 }
 .slick-slide {
   display: flex;
@@ -66,9 +71,8 @@
 }
 
 .projekt-bild {
-  max-width: 100%;
-  height: auto;
   width: 100%;
+  max-height: 430px;
 }
 
 .projekt-titel {
