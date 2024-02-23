@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/Personal-Portfolio/static/css/main.be3c0fdd.css",
-    "main.js": "/Personal-Portfolio/static/js/main.6872ac39.js",
+    "main.js": "/Personal-Portfolio/static/js/main.25234c29.js",
     "static/js/787.26f9666e.chunk.js": "/Personal-Portfolio/static/js/787.26f9666e.chunk.js",
     "static/media/UnderConstruction.png": "/Personal-Portfolio/static/media/UnderConstruction.85eb762c98050729c942.png",
     "static/media/profile.jpeg": "/Personal-Portfolio/static/media/profile.2bc2c9d8981a22896377.jpeg",
     "static/media/FrontEndCert.jpg": "/Personal-Portfolio/static/media/FrontEndCert.a46a3096da00f132d93e.jpg",
     "static/media/gymTracker.png": "/Personal-Portfolio/static/media/gymTracker.80b2007afbffdda668fc.png",
     "static/media/MarkaziText.ttf": "/Personal-Portfolio/static/media/MarkaziText.526f74ab0f94c23b4047.ttf",
+    "static/media/eHandelTailwind.png": "/Personal-Portfolio/static/media/eHandelTailwind.89925ab7978582173528.png",
     "static/media/LittleLemon.png": "/Personal-Portfolio/static/media/LittleLemon.8e918ef18e3d0d55839a.png",
     "static/media/Karla.ttf": "/Personal-Portfolio/static/media/Karla.1d835e644ae4118a28fc.ttf",
     "static/media/poke.png": "/Personal-Portfolio/static/media/poke.a8744d6111079fe14758.png",
@@ -19,11 +20,11 @@
     "static/media/slick.woff": "/Personal-Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Personal-Portfolio/index.html",
     "main.be3c0fdd.css.map": "/Personal-Portfolio/static/css/main.be3c0fdd.css.map",
-    "main.6872ac39.js.map": "/Personal-Portfolio/static/js/main.6872ac39.js.map",
+    "main.25234c29.js.map": "/Personal-Portfolio/static/js/main.25234c29.js.map",
     "787.26f9666e.chunk.js.map": "/Personal-Portfolio/static/js/787.26f9666e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be3c0fdd.css",
-    "static/js/main.6872ac39.js"
+    "static/js/main.25234c29.js"
   ]
 }
