@@ -6,7 +6,7 @@ import Section3 from "./components/Section3";
 const ProjektLista = [
   {
     titel: "Pokemon Arena",
-    img: require("./assets/poke.png"),
+    img: require("./assets/pokeupdate.png"),
     url: "https://karlgit13.github.io/pokemon/",
     buttonText: "LIVE DEMO",
     githubRepoUrl: "https://github.com/Karlgit13/pokemon",
