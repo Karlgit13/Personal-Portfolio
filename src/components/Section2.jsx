@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../style/section2.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const handleClick = (url) => {
   window.open(url, "_blank");
@@ -25,16 +27,29 @@ const Section2 = ({ ProjektLista }) => {
         <h1 className="section2-heading">Mina Projekt</h1>
       </div>
       <Slider {...settings}>
-        {ProjektLista.map(({ titel, img, url, beskrivning, buttonText }) => (
-          <div key={titel} className="projekt-div">
-            <h2 className="projekt-titel">{titel}</h2>
-            <img className="projekt-bild" src={img} alt={titel} />
-            <p className="projekt-paragraph">{beskrivning}</p>
-            <button className="projekt-knapp" onClick={() => handleClick(url)}>
-              {buttonText}
-            </button>
-          </div>
-        ))}
+        {ProjektLista.map(
+          ({ titel, img, url, beskrivning, buttonText, githubRepoUrl }) => (
+            <div key={titel} className="projekt-div">
+              <h2 className="projekt-titel">{titel}</h2>
+              <img className="projekt-bild" src={img} alt={titel} />
+              <p className="projekt-paragraph">{beskrivning}</p>
+              <div>
+                <button
+                  className="projekt-knapp"
+                  onClick={() => handleClick(url)}
+                >
+                  {buttonText}
+                </button>
+                <button
+                  onClick={() => handleClick(githubRepoUrl)}
+                  className="projekt-knapp"
+                >
+                  <FontAwesomeIcon icon={faGithub} /> Repository
+                </button>
+              </div>
+            </div>
+          )
+        )}
       </Slider>
     </div>
   );

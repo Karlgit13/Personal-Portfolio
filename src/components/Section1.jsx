@@ -51,7 +51,8 @@ const Section1 = () => {
       </h1>
       <h4 data-aos="fade-down" className="header2">
         Webbutvecklare, <br />
-        med höga kunskaper inom <br /> HTML, CSS, Javascript, React, Git osv.
+        med höga kunskaper inom <br /> HTML, CSS, Javascript, React, Figma, Git
+        osv.
       </h4>
       <p className="paragraph">
         <FontAwesomeIcon

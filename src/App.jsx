@@ -8,7 +8,8 @@ const ProjektLista = [
     titel: "Pokemon Arena",
     img: require("./assets/poke.png"),
     url: "https://karlgit13.github.io/pokemon/",
-    buttonText: "LIVE DEMO =>",
+    buttonText: "LIVE DEMO",
+    githubRepoUrl: "https://github.com/Karlgit13/pokemon",
     beskrivning:
       "Det här projektet är en applikation jag utvecklade för att fördjupa mina färdigheter i att integrera och hantera data från externa API:er, specifikt genom att använda PokeAPI. Appen är ett Pokemon-arenaspel där allt från attack- och försvarsstatistik till andra grundläggande egenskaper för varje Pokemon hämtas direkt från PokeAPI.",
   },
@@ -16,15 +17,25 @@ const ProjektLista = [
     titel: "E-Handel",
     img: require("./assets/e-handelUpdaterad.png"),
     url: "https://karlgit13.github.io/E-handel/",
-    buttonText: "LIVE DEMO =>",
+    buttonText: "LIVE DEMO",
+    githubRepoUrl: "https://github.com/Karlgit13/E-handel",
     beskrivning:
       "Detta är en responsiv e-handelsplattform, skapad från grunden med Create React App (CRA). Den är designad för att ge en sömlös shoppingupplevelse på alla enheter, med enkel navigering och en intuitiv användarinterface.",
+  },
+  {
+    titel: "E-Handel TailwindCSS",
+    img: require("./assets/eHandelTailwind.png"),
+    url: "https://karlgit13.github.io/e-handel-tailwind/",
+    buttonText: "LIVE DEMO",
+    githubRepoUrl: "https://github.com/Karlgit13/e-handel-tailwind",
+    beskrivning: "Samma E-handel projekt fast total remake med TailwindCSS.",
   },
   {
     titel: "Little Lemon Restaurant",
     img: require("./assets/LittleLemon.png"),
     url: "https://karlgit13.github.io/React-Little-Lemon-Restaurant/",
-    buttonText: "LIVE DEMO =>",
+    buttonText: "LIVE DEMO",
+    githubRepoUrl: "https://github.com/Karlgit13/React-Little-Lemon-Restaurant",
     beskrivning:
       "Det här är mitt första projekt i React.js, som jag utvecklade under tiden jag genomgick ett online-kurspaket i Front-end-utveckling. Det har varit en enormt givande erfarenhet som inte bara utvecklat mina tekniska färdigheter, utan också gett mig insikter i responsiv design för både desktop och mobila enheter.",
   },
@@ -32,7 +43,8 @@ const ProjektLista = [
     titel: "Tränings-Tracker",
     img: require("./assets/gymTracker.png"),
     url: "https://karlgit13.github.io/Tr-nings-Tracker/",
-    buttonText: "LIVE DEMO =>",
+    buttonText: "LIVE DEMO",
+    githubRepoUrl: "https://github.com/Karlgit13/Tr-nings-Tracker",
     beskrivning:
       "Mitt problem: Jag gillar att gymma i stortsätt varje dag men är inte ett fan av att följa strikta gymscheman. Min lösning: En app som hjälper mig att hålla koll på vilka muskelgrupper jag har tränat under veckans gång (så jag får med hela kroppen) och även återhämtningstiden för musklerna. PS. detta är ett enkelt projekt skapat för att hjälpa mig. Projektet använder ingen databas utan använder sig av lokalminnet i webbläsaren och är inställd på att återställas när en ny vecka börjar!",
   },
