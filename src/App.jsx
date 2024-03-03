@@ -5,6 +5,15 @@ import Section3 from "./components/Section3";
 
 const ProjektLista = [
   {
+    titel: "Gym-App",
+    img: require("./assets/gymApp3.0.png"),
+    url: "https://workout-tau-cyan.vercel.app/",
+    buttonText: "LIVE DEMO",
+    githubRepoUrl: "https://github.com/Karlgit13/Tr-nings-Tracker",
+    beskrivning:
+      "Detta projekt hostas på Vercel.com med Serverlösa funktioner, och använder MongoDB för databas. För lokal produktion har jag skapat en egen Express backend Server som kommunicerar med Front-enden via API. Kolla gärna min Github repository om du är nyfiken på filerna!",
+  },
+  {
     titel: "Pokemon Arena",
     img: require("./assets/pokeupdate.png"),
     url: "https://karlgit13.github.io/pokemon/",
@@ -39,15 +48,7 @@ const ProjektLista = [
     beskrivning:
       "Det här är mitt första projekt i React.js, som jag utvecklade under tiden jag genomgick ett online-kurspaket i Front-end-utveckling. Det har varit en enormt givande erfarenhet som inte bara utvecklat mina tekniska färdigheter, utan också gett mig insikter i responsiv design för både desktop och mobila enheter.",
   },
-  {
-    titel: "Tränings-Tracker",
-    img: require("./assets/gymTracker.png"),
-    url: "https://karlgit13.github.io/Tr-nings-Tracker/",
-    buttonText: "LIVE DEMO",
-    githubRepoUrl: "https://github.com/Karlgit13/Tr-nings-Tracker",
-    beskrivning:
-      "Mitt problem: Jag gillar att gymma i stortsätt varje dag men är inte ett fan av att följa strikta gymscheman. Min lösning: En app som hjälper mig att hålla koll på vilka muskelgrupper jag har tränat under veckans gång (så jag får med hela kroppen) och även återhämtningstiden för musklerna. PS. detta är ett enkelt projekt skapat för att hjälpa mig. Projektet använder ingen databas utan använder sig av lokalminnet i webbläsaren och är inställd på att återställas när en ny vecka börjar!",
-  },
+
   {
     titel: '"UNDER CONSTRUCTION"',
     img: require("./assets/UnderConstruction.png"),
