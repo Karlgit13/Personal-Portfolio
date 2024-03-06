@@ -6,7 +6,7 @@ import Section3 from "./components/Section3";
 const ProjektLista = [
   {
     titel: "Gym-App",
-    img: require("./assets/gymApp3.0.png"),
+    img: require("./assets/gym5.0.png"),
     url: "https://workout-tau-cyan.vercel.app/",
     buttonText: "LIVE DEMO",
     githubRepoUrl: "https://github.com/Karlgit13/Tr-nings-Tracker",
