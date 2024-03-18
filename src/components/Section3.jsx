@@ -1,6 +1,7 @@
 import "../style/section3.css";
 import FrontEndCert from "../assets/FrontEndCert.jpg";
 import FrontEndBadge from "../assets/FrontEndBadge.png";
+import JSCert from "../assets/JavaScript_FreeCodeCamp.png";
 import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -134,7 +135,13 @@ const Section3 = () => {
         >
           <img className="cert" src={FrontEndCert} alt="cert" />
         </a>
-        <img className="badge" src={FrontEndBadge} alt="badge" />
+        <a
+          href="https://www.freecodecamp.org/certification/Karlgit13/javascript-algorithms-and-data-structures-v8"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="cert" src={JSCert} alt="cert" />
+        </a>
       </div>
       <div className="kontakta-mig">
         <p className="brev">{p}</p>
