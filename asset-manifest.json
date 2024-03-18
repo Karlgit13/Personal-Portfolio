@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio/static/css/main.be3c0fdd.css",
-    "main.js": "/Personal-Portfolio/static/js/main.fad96cf6.js",
+    "main.css": "/Personal-Portfolio/static/css/main.e4fa9f27.css",
+    "main.js": "/Personal-Portfolio/static/js/main.f7f6f5ab.js",
     "static/js/787.26f9666e.chunk.js": "/Personal-Portfolio/static/js/787.26f9666e.chunk.js",
     "static/media/UnderConstruction.png": "/Personal-Portfolio/static/media/UnderConstruction.85eb762c98050729c942.png",
     "static/media/profile.jpeg": "/Personal-Portfolio/static/media/profile.2bc2c9d8981a22896377.jpeg",
@@ -10,6 +10,7 @@
     "static/media/eHandelTailwind.png": "/Personal-Portfolio/static/media/eHandelTailwind.89925ab7978582173528.png",
     "static/media/gym5.0.png": "/Personal-Portfolio/static/media/gym5.0.d5599e27ff71fdffbc71.png",
     "static/media/LittleLemon.png": "/Personal-Portfolio/static/media/LittleLemon.8e918ef18e3d0d55839a.png",
+    "static/media/JavaScript_FreeCodeCamp.png": "/Personal-Portfolio/static/media/JavaScript_FreeCodeCamp.a65d134a4f35b1e1272c.png",
     "static/media/Karla.ttf": "/Personal-Portfolio/static/media/Karla.1d835e644ae4118a28fc.ttf",
     "static/media/FrontEndBadge.png": "/Personal-Portfolio/static/media/FrontEndBadge.86827ab05c8cebbb0d54.png",
     "static/media/e-handelUpdaterad.png": "/Personal-Portfolio/static/media/e-handelUpdaterad.f969f6061c59106fc06b.png",
@@ -19,12 +20,12 @@
     "static/media/slick.ttf": "/Personal-Portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Personal-Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Personal-Portfolio/index.html",
-    "main.be3c0fdd.css.map": "/Personal-Portfolio/static/css/main.be3c0fdd.css.map",
-    "main.fad96cf6.js.map": "/Personal-Portfolio/static/js/main.fad96cf6.js.map",
+    "main.e4fa9f27.css.map": "/Personal-Portfolio/static/css/main.e4fa9f27.css.map",
+    "main.f7f6f5ab.js.map": "/Personal-Portfolio/static/js/main.f7f6f5ab.js.map",
     "787.26f9666e.chunk.js.map": "/Personal-Portfolio/static/js/787.26f9666e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be3c0fdd.css",
-    "static/js/main.fad96cf6.js"
+    "static/css/main.e4fa9f27.css",
+    "static/js/main.f7f6f5ab.js"
   ]
 }
