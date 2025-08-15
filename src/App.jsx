@@ -2,11 +2,16 @@ import Nav from "./components/Nav";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
+import gymImg from "./assets/gym5.0.png";
+import pokeImg from "./assets/pokeupdate.png";
+import ehandelImg from "./assets/e-handelUpdaterad.png";
+import ehandelTwImg from "./assets/eHandelTailwind.png";
+import lemonImg from "./assets/LittleLemon.png";
 
 const ProjektLista = [
   {
     titel: "Gym-App",
-    img: require("./assets/gym5.0.png"),
+    img: gymImg,
     url: "https://workout-tau-cyan.vercel.app/",
     buttonText: "LIVE DEMO",
     githubRepoUrl: "https://github.com/Karlgit13/Tr-nings-Tracker",
@@ -15,7 +20,7 @@ const ProjektLista = [
   },
   {
     titel: "Pokemon Arena",
-    img: require("./assets/pokeupdate.png"),
+    img: pokeImg,
     url: "https://karlgit13.github.io/pokemon/",
     buttonText: "LIVE DEMO",
     githubRepoUrl: "https://github.com/Karlgit13/pokemon",
@@ -24,7 +29,7 @@ const ProjektLista = [
   },
   {
     titel: "E-Handel",
-    img: require("./assets/e-handelUpdaterad.png"),
+    img: ehandelImg,
     url: "https://karlgit13.github.io/E-handel/",
     buttonText: "LIVE DEMO",
     githubRepoUrl: "https://github.com/Karlgit13/E-handel",
@@ -33,7 +38,7 @@ const ProjektLista = [
   },
   {
     titel: "E-Handel TailwindCSS",
-    img: require("./assets/eHandelTailwind.png"),
+    img: ehandelTwImg,
     url: "https://karlgit13.github.io/e-handel-tailwind/",
     buttonText: "LIVE DEMO",
     githubRepoUrl: "https://github.com/Karlgit13/e-handel-tailwind",
@@ -41,7 +46,7 @@ const ProjektLista = [
   },
   {
     titel: "Little Lemon Restaurant",
-    img: require("./assets/LittleLemon.png"),
+    img: lemonImg,
     url: "https://karlgit13.github.io/React-Little-Lemon-Restaurant/",
     buttonText: "LIVE DEMO",
     githubRepoUrl: "https://github.com/Karlgit13/React-Little-Lemon-Restaurant",
