@@ -1,39 +1,63 @@
 import { motion } from 'framer-motion';
-import { FaCertificate, FaAws, FaReact, FaNodeJs, FaGithub } from 'react-icons/fa';
-import { SiMongodb, SiGooglecloud, SiJavascript } from 'react-icons/si';
+import { FaCertificate, FaAws, FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiMongodb, SiGooglecloud, SiJavascript, SiNextdotjs, SiTypescript, SiJest } from 'react-icons/si';
 import FrontEndCert from '../assets/FrontEndCert.jpg';
 import JSCert from '../assets/JavaScript_FreeCodeCamp.png';
 
 const Certifications = () => {
   const certifications = [
     {
-      title: 'AWS Certified Developer',
-      provider: 'Amazon Web Services',
+      title: 'Cloud Infrastructure & Deployment',
+      provider: 'Multi-Cloud Solutions (AWS, Azure, Render)',
       year: '2025',
       icon: FaAws,
       color: 'from-orange-500 to-yellow-500',
-      tags: ['Cloud Architecture', 'Lambda', 'DynamoDB', 'API Gateway'],
+      tags: ['EC2/Lambda', 'Azure Functions', 'Render Blueprints', 'Docker'],
       verified: true,
+      statusText: 'Production Experience',
       image: null,
     },
     {
-      title: 'Google AI Fundamentals',
-      provider: 'Google',
+      title: 'Applied LLM & Gemini Architecture',
+      provider: 'Google Cloud & AI Studio',
       year: '2024',
       icon: SiGooglecloud,
       color: 'from-red-500 to-pink-500',
-      tags: ['Machine Learning', 'TensorFlow', 'Neural Networks', 'AI Ethics'],
+      tags: ['Gemini 1.5 Pro', 'NotebookLM', 'Google AI Studio', 'Antigravity'],
       verified: true,
       image: null,
     },
     {
-      title: 'GitHub Copilot Certification',
-      provider: 'GitHub',
+      title: 'Modern Fullstack Architecture',
+      provider: 'Next.js Ecosystem',
       year: '2024',
-      icon: FaGithub,
-      color: 'from-purple-500 to-indigo-500',
-      tags: ['AI Pair Programming', 'Code Generation', 'Prompt Engineering'],
+      icon: SiNextdotjs,
+      color: 'from-black to-gray-700',
+      tags: ['App Router', 'Server Components', 'SSR/SSG', 'Optimization'],
       verified: true,
+      statusText: 'Advanced Proficiency',
+      image: null,
+    },
+    {
+      title: 'TypeScript Engineering Mastery',
+      provider: 'Advanced Static Typing',
+      year: '2024',
+      icon: SiTypescript,
+      color: 'from-blue-600 to-blue-500',
+      tags: ['Strict Mode', 'Zod Validation', 'Generic Patterns', 'Type Safety'],
+      verified: true,
+      statusText: 'Core Skill',
+      image: null,
+    },
+    {
+      title: 'Software Quality & Best Practices',
+      provider: 'Testing & Architecture Standards',
+      year: '2024',
+      icon: SiJest,
+      color: 'from-pink-600 to-rose-500',
+      tags: ['Jest/Vitest', 'Mocking Strategies', 'TDD & CI', 'Clean Code'],
+      verified: true,
+      statusText: 'Professional Standard',
       image: null,
     },
     {
@@ -47,6 +71,16 @@ const Certifications = () => {
       image: null,
     },
     {
+      title: 'Backend Data Engineering',
+      provider: 'Relational (SQL) & NoSQL Architectures',
+      year: '2023',
+      icon: SiMongodb,
+      color: 'from-green-500 to-emerald-500',
+      tags: ['MongoDB', 'PostgreSQL', 'DynamoDB', 'Azure SQL', 'Redux'],
+      verified: true,
+      image: null,
+    },
+    {
       title: 'Meta Frontend Developer',
       provider: 'Meta (Facebook)',
       year: '2023',
@@ -56,16 +90,6 @@ const Certifications = () => {
       verified: true,
       verificationUrl: 'https://coursera.org/share/8ed07deb3e7546974a4dc4e59910049e',
       image: FrontEndCert,
-    },
-    {
-      title: 'MongoDB Developer',
-      provider: 'MongoDB University',
-      year: '2023',
-      icon: SiMongodb,
-      color: 'from-green-500 to-emerald-500',
-      tags: ['NoSQL', 'Aggregation', 'Indexing', 'Atlas'],
-      verified: true,
-      image: null,
     },
     {
       title: 'JavaScript Algorithms and Data Structures',
@@ -176,7 +200,7 @@ const Certifications = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>Verified</span>
+                  <span>{cert.statusText || 'Verified'}</span>
                 </div>
               )}
 

@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion';
 import { FaCode, FaServer, FaTools, FaCloud, FaAws } from 'react-icons/fa';
-import { 
+import { VscAzure } from 'react-icons/vsc';
+import {
   SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiVuedotjs,
   SiNodedotjs, SiExpress, SiMongodb, SiMysql, SiPostgresql,
   SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiSass,
-  SiGit, SiGithub, SiDocker, SiVercel, SiNetlify,
+  SiGit, SiGithub, SiDocker, SiNetlify,
   SiWebpack, SiVite, SiEslint, SiJest, SiFigma,
-  SiRedux, SiGraphql, SiFirebase, SiNpm
+  SiRedux, SiGraphql, SiFirebase, SiNpm,
+  SiGooglecloud, SiGithubactions, SiTerraform
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -16,14 +18,14 @@ const Skills = () => {
       icon: FaCode,
       color: 'from-blue-500 to-cyan-500',
       skills: [
+        { name: 'TypeScript', icon: SiTypescript, level: 95, color: '#3178C6' },
+        { name: 'React', icon: SiReact, level: 95, color: '#61DAFB' },
+        { name: 'Next.js', icon: SiNextdotjs, level: 90, color: '#000000' },
+        { name: 'JavaScript', icon: SiJavascript, level: 95, color: '#F7DF1E' },
+        { name: 'Redux', icon: SiRedux, level: 85, color: '#764ABC' },
+        { name: 'Vue.js', icon: SiVuedotjs, level: 70, color: '#4FC08D' },
         { name: 'HTML5', icon: SiHtml5, level: 95, color: '#E34F26' },
         { name: 'CSS3', icon: SiCss3, level: 95, color: '#1572B6' },
-        { name: 'JavaScript', icon: SiJavascript, level: 90, color: '#F7DF1E' },
-        { name: 'TypeScript', icon: SiTypescript, level: 80, color: '#3178C6' },
-        { name: 'React', icon: SiReact, level: 90, color: '#61DAFB' },
-        { name: 'Next.js', icon: SiNextdotjs, level: 75, color: '#000000' },
-        { name: 'Vue.js', icon: SiVuedotjs, level: 70, color: '#4FC08D' },
-        { name: 'Redux', icon: SiRedux, level: 85, color: '#764ABC' },
       ],
     },
     {
@@ -32,13 +34,13 @@ const Skills = () => {
       color: 'from-green-500 to-emerald-500',
       skills: [
         { name: 'Node.js', icon: SiNodedotjs, level: 85, color: '#339933' },
+        { name: 'PostgreSQL', icon: SiPostgresql, level: 85, color: '#4169E1' },
+        { name: 'AWS', icon: FaAws, level: 85, color: '#FF9900' },
+        { name: 'Google Cloud', icon: SiGooglecloud, level: 80, color: '#4285F4' },
+        { name: 'Azure', icon: VscAzure, level: 75, color: '#0078D4' },
         { name: 'Express', icon: SiExpress, level: 85, color: '#000000' },
         { name: 'MongoDB', icon: SiMongodb, level: 80, color: '#47A248' },
-        { name: 'MySQL', icon: SiMysql, level: 75, color: '#4479A1' },
-        { name: 'PostgreSQL', icon: SiPostgresql, level: 70, color: '#4169E1' },
         { name: 'GraphQL', icon: SiGraphql, level: 70, color: '#E10098' },
-        { name: 'Firebase', icon: SiFirebase, level: 75, color: '#FFCA28' },
-        { name: 'AWS', icon: FaAws, level: 65, color: '#FF9900' },
       ],
     },
     {
@@ -57,17 +59,14 @@ const Skills = () => {
       icon: FaCloud,
       color: 'from-orange-500 to-red-500',
       skills: [
+        { name: 'Docker', icon: SiDocker, level: 85, color: '#2496ED' },
+        { name: 'GitHub Actions', icon: SiGithubactions, level: 90, color: '#2088FF' },
+        { name: 'Terraform', icon: SiTerraform, level: 75, color: '#7B42BC' },
         { name: 'Git', icon: SiGit, level: 90, color: '#F05032' },
         { name: 'GitHub', icon: SiGithub, level: 90, color: '#181717' },
-        { name: 'Docker', icon: SiDocker, level: 70, color: '#2496ED' },
-        { name: 'Vercel', icon: SiVercel, level: 85, color: '#000000' },
-        { name: 'Netlify', icon: SiNetlify, level: 80, color: '#00C7B7' },
         { name: 'Vite', icon: SiVite, level: 90, color: '#646CFF' },
-        { name: 'Webpack', icon: SiWebpack, level: 75, color: '#8DD6F9' },
-        { name: 'Jest', icon: SiJest, level: 80, color: '#C21325' },
-        { name: 'ESLint', icon: SiEslint, level: 85, color: '#4B32C3' },
-        { name: 'npm', icon: SiNpm, level: 85, color: '#CB3837' },
         { name: 'pnpm', icon: SiNpm, level: 90, color: '#F69220' },
+        { name: 'Jest', icon: SiJest, level: 80, color: '#C21325' },
       ],
     },
   ];
@@ -176,8 +175,8 @@ const Skills = () => {
               Continuous Learning & Growth
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              I'm constantly expanding my skill set and staying up-to-date with the latest technologies 
-              and best practices in web development. Currently exploring advanced topics in AI integration, 
+              I'm constantly expanding my skill set and staying up-to-date with the latest technologies
+              and best practices in web development. Currently exploring advanced topics in AI integration,
               serverless architectures, and progressive web applications.
             </p>
           </div>

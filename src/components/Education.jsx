@@ -9,7 +9,7 @@ const Education = () => {
       location: 'Folkuniversitetet, Gothenburg, Sweden',
       period: 'Currently enrolled - graduating June 2026',
       status: 'In Progress',
-      description: 'I\'m currently enrolled in an official Swedish Higher Vocational Education program (Yrkeshögskola) to become a JavaScript Developer at Folkuniversitetet in Gothenburg, Sweden. Achieving exceptional results with 7 highest grades (VG) and 2 second-highest grades (G). Currently completing CI/CD Deployment course (expected VG). Also implemented professional CI/CD pipelines at NordenAI.',
+      description: 'I\'m currently enrolled in an official Swedish Higher Vocational Education program (Yrkeshögskola) to become a JavaScript Developer at Folkuniversitetet in Gothenburg, Sweden. Achieving exceptional results with 8 highest grades (VG) and 2 second-highest grades (G). Completed CI/CD Deployment course (VG). Currently working on Degree Project. Also implemented professional CI/CD pipelines at NordenAI.',
       highlights: [
         'HTML och CSS - 30 yhp (G)',
         'JavaScript - 40 yhp (VG)',
@@ -19,7 +19,8 @@ const Education = () => {
         'Backend grunder - 35 yhp (VG)',
         'Databaser, 25 yhp (VG)',
         'Backend fördjupning - 30 yhp (VG)',
-        'CI/CD Deployment - 50 yhp (In Progress, expected VG)',
+        'CI/CD Deployment - 50 yhp (VG)',
+        'Degree Project (In Progress)',
       ],
       color: 'from-blue-500 to-purple-500',
     },
@@ -119,11 +120,10 @@ const Education = () => {
                       <h3 className="text-2xl font-bold text-white mb-2">{edu.degree}</h3>
                       <p className="text-lg text-blue-400 font-semibold">{edu.institution}</p>
                     </div>
-                    <div className={`mt-2 md:mt-0 inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold ${
-                      edu.status === 'In Progress'
+                    <div className={`mt-2 md:mt-0 inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold ${edu.status === 'In Progress'
                         ? 'bg-blue-500/20 text-blue-400 border border-blue-500/50'
                         : 'bg-green-500/20 text-green-400 border border-green-500/50'
-                    }`}>
+                      }`}>
                       {edu.status}
                     </div>
                   </div>
