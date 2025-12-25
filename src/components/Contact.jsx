@@ -13,7 +13,7 @@ const Contact = () => {
     {
       icon: FaPhone,
       title: 'Mobile',
-      value: '0733797567',
+      value: '+46733797567',
       link: 'tel:+46733797567',
       color: 'from-green-500 to-emerald-500',
     },
@@ -98,14 +98,14 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-white mb-6">Contact Me</h3>
             <p className="text-gray-400 mb-8 leading-relaxed">
               Email:{' '}
-              <a 
-                href="mailto:karl.vareskog@icloud.com" 
+              <a
+                href="mailto:karl.vareskog@icloud.com"
                 className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
               >
                 karl.vareskog@icloud.com
               </a>
               <br />
-              Mobile/Number: 0733797567
+              Mobile/Number: +46733797567
             </p>
 
             {/* Contact Cards */}
@@ -187,9 +187,9 @@ const Contact = () => {
                 💡 Academic Achievement
               </h4>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Maintaining excellent academic performance with <span className="text-blue-400 font-semibold">7 highest grades (VG)</span> and 
-                <span className="text-purple-400 font-semibold"> 2 second-highest grades (G)</span> while working professionally 
-                at NordenAI as a Fullstack Developer, System Architect & AI Engineer. Check out my latest projects 
+                Maintaining excellent academic performance with <span className="text-blue-400 font-semibold">7 highest grades (VG)</span> and
+                <span className="text-purple-400 font-semibold"> 2 second-highest grades (G)</span> while working professionally
+                at NordenAI as a Fullstack Developer, System Architect & AI Engineer. Check out my latest projects
                 on GitHub showcasing serverless architectures, database design, CI/CD, and modern backend development.
               </p>
             </motion.div>
