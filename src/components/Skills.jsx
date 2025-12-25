@@ -1,72 +1,61 @@
 import { motion } from 'framer-motion';
-import { FaCode, FaServer, FaTools, FaCloud, FaAws } from 'react-icons/fa';
+import { FaCode, FaServer, FaTools, FaCloud, FaAws, FaLayerGroup, FaNetworkWired, FaBrain } from 'react-icons/fa';
 import { VscAzure } from 'react-icons/vsc';
 import {
-  SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiVuedotjs,
-  SiNodedotjs, SiExpress, SiMongodb, SiMysql, SiPostgresql,
-  SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiSass,
-  SiGit, SiGithub, SiDocker, SiNetlify,
-  SiWebpack, SiVite, SiEslint, SiJest, SiFigma,
-  SiRedux, SiGraphql, SiFirebase, SiNpm,
+  SiJavascript, SiTypescript, SiReact, SiNextdotjs,
+  SiNodedotjs, SiExpress, SiPostgresql,
+  SiHtml5, SiCss3, SiTailwindcss,
+  SiGit, SiGithub, SiDocker,
+  SiVite, SiJest, SiAmazondynamodb,
   SiGooglecloud, SiGithubactions, SiTerraform
 } from 'react-icons/si';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: 'Expert / Daily Drivers',
       icon: FaCode,
       color: 'from-blue-500 to-cyan-500',
+      description: 'Core technologies I use daily to build scalable applications',
       skills: [
-        { name: 'TypeScript', icon: SiTypescript, level: 95, color: '#3178C6' },
-        { name: 'React', icon: SiReact, level: 95, color: '#61DAFB' },
-        { name: 'Next.js', icon: SiNextdotjs, level: 90, color: '#000000' },
-        { name: 'JavaScript', icon: SiJavascript, level: 95, color: '#F7DF1E' },
-        { name: 'Redux', icon: SiRedux, level: 85, color: '#764ABC' },
-        { name: 'Vue.js', icon: SiVuedotjs, level: 70, color: '#4FC08D' },
-        { name: 'HTML5', icon: SiHtml5, level: 95, color: '#E34F26' },
-        { name: 'CSS3', icon: SiCss3, level: 95, color: '#1572B6' },
+        { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
+        { name: 'React', icon: SiReact, color: '#61DAFB' },
+        { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+        { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
+        { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+        { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
+        { name: 'HTML5', icon: SiHtml5, color: '#E34F26' },
+        { name: 'CSS3', icon: SiCss3, color: '#1572B6' },
       ],
     },
     {
-      title: 'Backend Development',
+      title: 'Proficient / Cloud & Infrastructure',
       icon: FaServer,
-      color: 'from-green-500 to-emerald-500',
-      skills: [
-        { name: 'Node.js', icon: SiNodedotjs, level: 85, color: '#339933' },
-        { name: 'PostgreSQL', icon: SiPostgresql, level: 85, color: '#4169E1' },
-        { name: 'AWS', icon: FaAws, level: 85, color: '#FF9900' },
-        { name: 'Google Cloud', icon: SiGooglecloud, level: 80, color: '#4285F4' },
-        { name: 'Azure', icon: VscAzure, level: 75, color: '#0078D4' },
-        { name: 'Express', icon: SiExpress, level: 85, color: '#000000' },
-        { name: 'MongoDB', icon: SiMongodb, level: 80, color: '#47A248' },
-        { name: 'GraphQL', icon: SiGraphql, level: 70, color: '#E10098' },
-      ],
-    },
-    {
-      title: 'Styling & Design',
-      icon: FaTools,
-      color: 'from-purple-500 to-pink-500',
-      skills: [
-        { name: 'Tailwind CSS', icon: SiTailwindcss, level: 90, color: '#06B6D4' },
-        { name: 'Bootstrap', icon: SiBootstrap, level: 85, color: '#7952B3' },
-        { name: 'Sass', icon: SiSass, level: 80, color: '#CC6699' },
-        { name: 'Figma', icon: SiFigma, level: 75, color: '#F24E1E' },
-      ],
-    },
-    {
-      title: 'Tools & DevOps',
-      icon: FaCloud,
       color: 'from-orange-500 to-red-500',
+      description: 'Reliable tools for deployment, testing, and backend architecture',
       skills: [
-        { name: 'Docker', icon: SiDocker, level: 85, color: '#2496ED' },
-        { name: 'GitHub Actions', icon: SiGithubactions, level: 90, color: '#2088FF' },
-        { name: 'Terraform', icon: SiTerraform, level: 75, color: '#7B42BC' },
-        { name: 'Git', icon: SiGit, level: 90, color: '#F05032' },
-        { name: 'GitHub', icon: SiGithub, level: 90, color: '#181717' },
-        { name: 'Vite', icon: SiVite, level: 90, color: '#646CFF' },
-        { name: 'pnpm', icon: SiNpm, level: 90, color: '#F69220' },
-        { name: 'Jest', icon: SiJest, level: 80, color: '#C21325' },
+        { name: 'AWS Cloud Services', icon: FaAws, color: '#FF9900' },
+        { name: 'DynamoDB', icon: SiAmazondynamodb, color: '#4053D6' },
+        { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
+        { name: 'Docker', icon: SiDocker, color: '#2496ED' },
+        { name: 'Git & GitHub', icon: SiGithub, color: '#181717' },
+        { name: 'Express.js', icon: SiExpress, color: '#000000' },
+        { name: 'Jest / Vitest', icon: SiJest, color: '#C21325' },
+        { name: 'GitHub Actions', icon: SiGithubactions, color: '#2088FF' },
+        { name: 'Vite', icon: SiVite, color: '#646CFF' },
+      ],
+    },
+    {
+      title: 'Exposure / Ecosystem',
+      icon: FaBrain,
+      color: 'from-purple-500 to-pink-500',
+      description: 'Broadening my scope with cloud patterns and AI integration',
+      skills: [
+        { name: 'Azure', icon: VscAzure, color: '#0078D4' },
+        { name: 'Google Cloud', icon: SiGooglecloud, color: '#4285F4' },
+        { name: 'Terraform', icon: SiTerraform, color: '#7B42BC' },
+        { name: 'System Architecture', icon: FaNetworkWired, color: '#E10098' },
+        { name: 'Microservices', icon: FaLayerGroup, color: '#880000' },
       ],
     },
   ];
@@ -101,7 +90,7 @@ const Skills = () => {
             viewport={{ once: true }}
             className="text-gray-400 max-w-2xl mx-auto"
           >
-            Comprehensive expertise across modern web development technologies
+            A tiered breakdown of my technical expertise and daily drivers
           </motion.p>
         </div>
 
@@ -116,15 +105,21 @@ const Skills = () => {
               transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
             >
               {/* Category Header */}
-              <div className="flex items-center gap-4 mb-6">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${category.color} flex items-center justify-center`}>
-                  <category.icon className="text-white" size={24} />
+              <div className="flex flex-col md:flex-row md:items-center gap-4 mb-8">
+                <div className="flex items-center gap-4">
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${category.color} flex items-center justify-center`}>
+                    <category.icon className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white whitespace-nowrap">{category.title}</h3>
                 </div>
-                <h3 className="text-2xl font-bold text-white">{category.title}</h3>
+                <div className="hidden md:block h-px flex-1 bg-gradient-to-r from-gray-700 to-transparent ml-4" />
+                <p className="text-gray-400 text-sm md:text-right max-w-md italic border-l-2 border-gray-700 pl-4 md:border-none md:pl-0">
+                  {category.description}
+                </p>
               </div>
 
               {/* Skills Grid */}
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
                     key={skillIndex}
@@ -132,29 +127,16 @@ const Skills = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: categoryIndex * 0.1 + skillIndex * 0.05 }}
-                    whileHover={{ y: -5 }}
-                    className="card group"
+                    whileHover={{ y: -5, scale: 1.05 }}
+                    className="glass-effect p-4 rounded-xl border border-white/5 hover:border-white/10 transition-all duration-300 group"
                   >
-                    {/* Skill Icon and Name */}
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 rounded-lg glass-effect flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors">
                         <skill.icon size={24} style={{ color: skill.color }} />
                       </div>
-                      <div>
-                        <h4 className="text-white font-semibold">{skill.name}</h4>
-                        <p className="text-xs text-gray-400">{skill.level}%</p>
-                      </div>
-                    </div>
-
-                    {/* Progress Bar */}
-                    <div className="w-full h-2 glass-effect rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: categoryIndex * 0.1 + skillIndex * 0.05 + 0.2 }}
-                        className={`h-full bg-gradient-to-r ${category.color} rounded-full`}
-                      />
+                      <span className="text-gray-200 font-medium group-hover:text-white transition-colors">
+                        {skill.name}
+                      </span>
                     </div>
                   </motion.div>
                 ))}
@@ -187,4 +169,3 @@ const Skills = () => {
 };
 
 export default Skills;
-

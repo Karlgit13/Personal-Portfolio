@@ -1,25 +1,27 @@
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaCode, FaLaptopCode, FaRocket } from 'react-icons/fa';
-import { 
-  SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiExpress, 
-  SiTailwindcss, SiVite, SiGit, SiHtml5, SiCss3, SiVercel, SiNpm 
+import { FaBriefcase, FaCode, FaLaptopCode, FaRocket, FaAws } from 'react-icons/fa';
+import { VscAzure } from 'react-icons/vsc';
+import {
+  SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiExpress,
+  SiTailwindcss, SiVite, SiGit, SiHtml5, SiCss3, SiNpm,
+  SiGooglecloud, SiGithubactions, SiTerraform, SiNextdotjs, SiTypescript, SiPostgresql, SiDocker
 } from 'react-icons/si';
 // Project images will be generated from GitHub or placeholders
 
 const Experience = () => {
   const techStack = [
-    { name: 'HTML5', icon: SiHtml5, color: '#E34F26' },
-    { name: 'CSS3', icon: SiCss3, color: '#1572B6' },
-    { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
+    { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
     { name: 'React', icon: SiReact, color: '#61DAFB' },
+    { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
     { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
-    { name: 'Express', icon: SiExpress, color: '#000000' },
-    { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-    { name: 'Tailwind', icon: SiTailwindcss, color: '#06B6D4' },
-    { name: 'Vite', icon: SiVite, color: '#646CFF' },
-    { name: 'pnpm', icon: SiNpm, color: '#F69220' },
+    { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
+    { name: 'AWS', icon: FaAws, color: '#FF9900' },
+    { name: 'Google Cloud', icon: SiGooglecloud, color: '#4285F4' },
+    { name: 'Azure', icon: VscAzure, color: '#0078D4' },
+    { name: 'Docker', icon: SiDocker, color: '#2496ED' },
+    { name: 'GitHub Actions', icon: SiGithubactions, color: '#2088FF' },
+    { name: 'Terraform', icon: SiTerraform, color: '#7B42BC' },
     { name: 'Git', icon: SiGit, color: '#F05032' },
-    { name: 'Vercel', icon: SiVercel, color: '#000000' },
   ];
 
   const projects = [
@@ -143,10 +145,10 @@ const Experience = () => {
                   Fullstack Developer, System Architect & AI Engineer @ NordenAI
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Working <span className="text-purple-400 font-semibold">50%</span> at NordenAI while pursuing my 
-                  JavaScript Developer diploma at Folkuniversitetet. Recently implemented and developed 
-                  <span className="text-purple-400 font-semibold"> CI/CD pipelines</span> in production environment, 
-                  improving deployment efficiency and reliability. Contributing to AI-powered solutions and 
+                  Working <span className="text-purple-400 font-semibold">50%</span> at NordenAI while pursuing my
+                  JavaScript Developer diploma at Folkuniversitetet. Recently implemented and developed
+                  <span className="text-purple-400 font-semibold"> CI/CD pipelines</span> in production environment,
+                  improving deployment efficiency and reliability. Contributing to AI-powered solutions and
                   system architecture design.
                 </p>
                 <div className="flex flex-wrap gap-2">
